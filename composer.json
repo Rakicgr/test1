@@ -1,0 +1,8 @@
+{
+  "require": {
+    "jpgraph/jpgraph": "^4.2.11",
+    "amenadiel/jpgraph": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
