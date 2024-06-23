@@ -1,144 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Business Type Generator</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <div class="card mt-5 shadow-lg border-0">
-
       <div class="card-header bg-primary text-white text-center">
-  <h1><i class="fa fa-briefcase"></i> Business Type Generator</h1>
-</div>
-
-        <h1>Business Type Generator</h1>
+        <h1><i class="fa fa-briefcase"></i> Business Type Generator</h1>
       </div>
       <div class="card-body p-5">
-
         <form id="businessForm" method="post" action="process.php">
-<div class="form-group">
-  <label for="numEmployees">Planirani broj zaposlenih</label>
-  <select class="form-control" id="numEmployees" name="numEmployees" required>
-    <option value="" disabled selected>Odaberite</option>
-    <option value="1">1</option>
-    <option value="2-5">2-5</option>
-    <option value="6-10">6-10</option>
-    <option value="11+">11+</option>
-  </select>
-</div>
-<div class="form-group">
-  <label for="businessCategory">Kategorija poslovanja</label>
-  <select class="form-control" id="businessCategory" name="businessCategory" required>
-    <option value="" disabled selected>Odaberite</option>
-    <option value="IT">IT</option>
-    <option value="Ugostiteljstvo">Ugostiteljstvo</option>
-    <option value="Trgovina">Trgovina</option>
-    <option value="Proizvodnja">Proizvodnja</option>
-  </select>
-</div>
-<div class="form-group">
-  <label for="revenueEstimate">Procjena prihoda</label>
-  <select class="form-control" id="revenueEstimate" name="revenueEstimate" required>
-    <option value="" disabled selected>Odaberite</option>
-    <option value="<50000">&lt; 50,000 HRK</option>
-    <option value="50000-100000">50,000 - 100,000 HRK</option>
-    <option value="100000+">&gt; 100,000 HRK</option>
-  </select>
-</div>
-<div class="form-group">
-  <label for="marketArea">Tržište djelovanja</label>
-  <select class="form-control" id="marketArea" name="marketArea" required>
-    <option value="" disabled selected>Odaberite</option>
-    <option value="Lokalno">Lokalno</option>
-    <option value="Nacionalno">Nacionalno</option>
-    <option value="Međunarodno">Međunarodno</option>
-  </select>
-</div>
-<div class="form-group">
-  <label for="numOwners">Broj suvlasnika</label>
-  <select class="form-control" id="numOwners" name="numOwners" required>
-    <option value="" disabled selected>Odaberite</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3+">3+</option>
-  </select>
-</div>
-
-<div class="form-group">
-  <label for="numEmployees">Planirani broj zaposlenih</label>
-  <select class="form-control" id="numEmployees" name="numEmployees" required>
-    <option value="" disabled selected>Odaberite</option>
-    <option value="1">1</option>
-    <option value="2-5">2-5</option>
-    <option value="6-10">6-10</option>
-    <option value="11+">11+</option>
-  </select>
-</div>
-<div class="form-group">
-  <label for="businessCategory">Kategorija poslovanja</label>
-  <select class="form-control" id="businessCategory" name="businessCategory" required>
-    <option value="" disabled selected>Odaberite</option>
-    <option value="IT">IT</option>
-    <option value="Ugostiteljstvo">Ugostiteljstvo</option>
-    <option value="Trgovina">Trgovina</option>
-    <option value="Proizvodnja">Proizvodnja</option>
-  </select>
-</div>
-<div class="form-group">
-  <label for="revenueEstimate">Procjena prihoda</label>
-  <select class="form-control" id="revenueEstimate" name="revenueEstimate" required>
-    <option value="" disabled selected>Odaberite</option>
-    <option value="<50000">&lt; 50,000 HRK</option>
-    <option value="50000-100000">50,000 - 100,000 HRK</option>
-    <option value="100000+">&gt; 100,000 HRK</option>
-  </select>
-</div>
-<div class="form-group">
-  <label for="marketArea">Tržište djelovanja</label>
-  <select class="form-control" id="marketArea" name="marketArea" required>
-    <option value="" disabled selected>Odaberite</option>
-    <option value="Lokalno">Lokalno</option>
-    <option value="Nacionalno">Nacionalno</option>
-    <option value="Međunarodno">Međunarodno</option>
-  </select>
-</div>
-<div class="form-group">
-  <label for="numOwners">Broj suvlasnika</label>
-  <select class="form-control" id="numOwners" name="numOwners" required>
-    <option value="" disabled selected>Odaberite</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3+">3+</option>
-  </select>
-</div>
-
           <div class="form-group">
             <label for="numEmployees">Planirani broj zaposlenih</label>
-            <input type="number" class="form-control" id="numEmployees" name="numEmployees" required>
+            <select class="form-control" id="numEmployees" name="numEmployees" required>
+              <option value="" disabled selected>Odaberite</option>
+              <option value="1">1</option>
+              <option value="2-5">2-5</option>
+              <option value="6-10">6-10</option>
+              <option value="11+">11+</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="businessCategory">Kategorija poslovanja</label>
-            <input type="text" class="form-control" id="businessCategory" name="businessCategory" required>
+            <select class="form-control" id="businessCategory" name="businessCategory" required>
+              <option value="" disabled selected>Odaberite</option>
+              <option value="IT">IT</option>
+              <option value="Ugostiteljstvo">Ugostiteljstvo</option>
+              <option value="Trgovina">Trgovina</option>
+              <option value="Proizvodnja">Proizvodnja</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="revenueEstimate">Procjena prihoda</label>
-            <input type="number" class="form-control" id="revenueEstimate" name="revenueEstimate" required>
+            <select class="form-control" id="revenueEstimate" name="revenueEstimate" required>
+              <option value="" disabled selected>Odaberite</option>
+              <option value="<50000">&lt; 50,000 HRK</option>
+              <option value="50000-100000">50,000 - 100,000 HRK</option>
+              <option value="100000+">&gt; 100,000 HRK</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="marketArea">Tržište djelovanja</label>
-            <input type="text" class="form-control" id="marketArea" name="marketArea" required>
+            <select class="form-control" id="marketArea" name="marketArea" required>
+              <option value="" disabled selected>Odaberite</option>
+              <option value="Lokalno">Lokalno</option>
+              <option value="Nacionalno">Nacionalno</option>
+              <option value="Međunarodno">Međunarodno</option>
+            </select>
           </div>
           <div class="form-group">
             <label for="numOwners">Broj suvlasnika</label>
-            <input type="number" class="form-control" id="numOwners" name="numOwners" required>
+            <select class="form-control" id="numOwners" name="numOwners" required>
+              <option value="" disabled selected>Odaberite</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3+">3+</option>
+            </select>
           </div>
           <button type="submit" class="btn btn-primary">Generiraj preporuku</button>
         </form>
