@@ -1,0 +1,57 @@
+background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.card-header {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+textarea {
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+}
+
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.card-header {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
